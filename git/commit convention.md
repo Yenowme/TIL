@@ -6,12 +6,12 @@
 ---
 
 ```jsx
-type: subject;
+type: subject
 
-body;
-gi;
+body
+gi
 
-footer;
+footer
 ```
 
 기본적으로 위와 같이 구성한다.
