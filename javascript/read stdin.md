@@ -36,6 +36,29 @@ rl.on("close", () => {
 
 ---
 
+### 여러 줄 입력방법
+
+```javascript
+const rl = require("readline").createInterface({ input: process.stdin });
+
+let arr = [];
+let i = 0;
+
+rl.on("line", (line) => {
+  //이벤트리스너여서 계속 반복된다.
+  console.log(i);
+  i++;
+  if (i === 3) {
+    rl.close();
+  }
+}).on("close", () => {
+  console.log(arr);
+  process.exit;
+});
+```
+
+- `rl`에 `"line"`이라는 이벤트 리스너를 걸어서 진행하는것이기 때문에 여러줄을 입력받더라도 따로 반복문을 설정 할 필요없이, 리스너 안에 close조건을 걸어주면 된다.
+
 ### 그 외 메소드
 
 - .`question`
