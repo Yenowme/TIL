@@ -1,10 +1,11 @@
-#DOM 다루기
+# DOM 다루기
 
-[0. 노드 선택](##노드-선택)
-[1. location](##1.location)
-[2.event](##2.event)
+- [0. 노드 선택](#0-노드-선택)
+- [1. location](#1-location)
+- [2. event](#2-event)
+<br>
 
-##0.노드 선택
+# 0. 노드 선택
 
 ### 알아둘 것
 
@@ -15,7 +16,7 @@
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f21b87a-bc0d-4ae8-9a8e-74ddbd84b7a6/_2021-07-07__3.14.51.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f21b87a-bc0d-4ae8-9a8e-74ddbd84b7a6/_2021-07-07__3.14.51.png)
 
-자바스크립트 명령어를 통해 노드를 선택해서 조정할 수 있다
+자바스크립트 명령어를 통해 노드를 선택해서 조정할 수 있다. <br>
 내가 자주 사용한건 아래 명령어들
 
 - `querySelector`
@@ -24,7 +25,7 @@
 - `getElementsByclassName`
 - `getElementById`
 - `.childNodes`
-  - 배열
+  - 배열 형식으로 되어있다.
     - 접근방법
 - `previousSibling` & `nextSibling`
   - 형제 노드를 찾을때 사용
@@ -35,7 +36,7 @@
 
 [https://ko.javascript.info/dom-navigation](https://ko.javascript.info/dom-navigation)
 
-## 1. location
+# 1. location
 
 `window`와 `Document`가 가지고 있는 객체. 객체가 연결된 장소(url)을 포함한다.
 
@@ -51,16 +52,13 @@
 
   `location.reload()`
 
----
 
-## 2. event
+# 2. event
 
 ### 이벤트를 다루는 방법
 
 - 사용자가 버튼을 클릭하거나, 폼필드에 값을 넣는 등의 행동을 했을 때, 이 모든 행동을 javascript의 event객체는 관찰하고 있다.
   우리는 이걸 이용해서 웹사이트를 동적으로 구성할 수 있다.
-
----
 
 ### 이벤트 리스너
 
