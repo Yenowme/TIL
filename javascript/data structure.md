@@ -1,19 +1,19 @@
-### Queue 구현
+## Queue 구현
 
-- FIFO
-- 데이터를 집어넣는 선형자료형
+-   FIFO
+-   데이터를 집어넣는 선형자료형
 
 ```jsx
 class Queue {
-  constructor() {
-    this._arr = [];
-  }
-  enqueue(item) {
-    this._arr.push(item);
-  }
-  dequeue() {
-    return this._arr.shift();
-  }
+    constructor() {
+        this._arr = [];
+    }
+    enqueue(item) {
+        this._arr.push(item);
+    }
+    dequeue() {
+        return this._arr.shift();
+    }
 }
 
 const queue = new Queue();

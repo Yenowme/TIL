@@ -31,6 +31,19 @@
   - 형제 노드를 찾을때 사용
   - previous : 앞
   - next: 뒤
+---
+### querySelector & getElementBy 차이
+
+- querySelecor
+
+    → NodeList 반환
+
+    - 인덱스로 노드에 접근 가능
+- getElementBY
+
+    → HTMLcollection 반환
+
+    - 인덱스나 키로 노드에 접근 가능
 
 ### 참고
 
