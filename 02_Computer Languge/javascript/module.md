@@ -16,7 +16,10 @@
 		export fuc = function(){}
 	```
 	- default export : 문서에 내보낼 요소가 하나 뿐일때 명시
-
+	```js
+		//내보낼 모듈
+		export default fuc = function(){}
+	```
 ## 가져오기
 
 1. import
