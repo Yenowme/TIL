@@ -1,56 +1,6 @@
-# markdown syntax
+# interface
 
--   html tag 사용가능
-
-## title
-
-### code
-
-```md
-# text ->h1
-
-## text ->h2
-
-### text ->h3
-```
-
-# h1 text
-
-## h2 text
-
-### h3 text
-
-<br/>
-<br />
-
-## Image
-
-### code
-
-```md
-![image name](image URL)
-
-or
-
- <img src="image URL" alt="img name" width="200"/>
-```
-
-## 도표
-
-`|`와 `-` 를 사용해서 생성 가능
-
-```md
-| First Header                | Second Header                |
-| --------------------------- | ---------------------------- |
-| Content from cell 1         | Content from cell 2          |
-| Content in the first column | Content in the second column |
-```
-
-⬇
-
-| First Header | Second Header |
-| ------------------ 타입 정의 방법
-
+-   타입 정의 방법
 -   클래스와 개념이 비슷하지만, 추상 클래스와 좀 더 비슷(?)
 
 ### 인터페이스 vs 커스텀 타입
@@ -137,23 +87,18 @@ const button: ButtonInterface = {
 
 ## 함수 인터페이스
 
-````tsx
+```tsx
 interface FactorialInterface {
-  (n: number): number;
+    (n: number): number;
 }
 
 const facto: FactorialInterface = (n) => {
-  if (n === 0) { return 0; }
-  if (n === 1) { return 1; }
-  return n * facto(n - 1);
+    if (n === 0) {
+        return 0;
+    }
+    if (n === 1) {
+        return 1;
+    }
+    return n * facto(n - 1);
 };
-```---------- | ---------------------------- |
-| Content from cell 1         | Content from cell 2          |
-| Content in the first column | Content in the second column |
-
----
-
-## 참고
-
--   [깃허브 공식 문서](https://guides.github.com/features/mastering-markdown/)
-````
+```
