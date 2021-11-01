@@ -23,6 +23,7 @@
 ## 응용
 
 -   [url query string 가져오기](get_query_string.md)
+-   [XSS대응](XSS.md)
 
 ## 참고
 
