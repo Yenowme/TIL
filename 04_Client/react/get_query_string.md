@@ -9,7 +9,7 @@ yarn add query-string
 ## 사용
 
 ```jsx
-import queryString from "query-string"그
+import queryString from "query-string";
 
 const questionId = queryString.parse(location.search);
 ```
