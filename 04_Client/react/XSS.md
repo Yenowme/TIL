@@ -9,9 +9,9 @@
 -   `dangerouslySetInnerHTML` 속성을 사용해야만 렌더링이 가능하다.
 
 ```html
-<div>
+<div
     dangerouslySetInnerHTML={{__html: "
     <div></div>
     "}}>
-</div>
+></div>
 ```
